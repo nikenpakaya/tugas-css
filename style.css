@@ -1,0 +1,131 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: bisque;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 2000px;
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    top: 0;
+    margin-inline: auto;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #EABE6C;
+    font-weight: 600;
+    padding: 4px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    font-size: large;
+}
+
+.navbar ul li a:hover {
+    color: rgba(97, 0, 148, 1);
+    border-bottom: 1px solid black;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-container {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Asset/background.jpg');
+    width: 100%;
+}
+
+
+.home-container h1 {
+    color: #EABE6C;
+    font-size: 50px;
+    text-align: center;
+}
+
+.home-container article {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.article-home {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    transition: padding-left 0.5s ease, padding-right 0.5s ease;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.icons a img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.icons a:hover img {
+    transform: scale(0.8);
+    box-shadow: 0 0 75px black;
+}
+
+.icons a:active img {
+    transform: scale(2);
+}
+
+.icons a:not(:hover) img {
+    transition: none;
+}
+
+.container-gallery {
+    display: flex;
+    color: white; 
+    background-color: black;
+    padding: 50px;
+    margin: 0px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.container-gallery h2 {
+    margin-bottom: 50px;
+}
